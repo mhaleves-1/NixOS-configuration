@@ -8,6 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./nvidia.nix
+      ./desktop.nix
+      ./gaming.nix
     ];
 
   # --------------------------
@@ -19,7 +22,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # -------------------------
   # --------- DISKS ---------
@@ -96,8 +99,11 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    pciutils
   #   wget
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
