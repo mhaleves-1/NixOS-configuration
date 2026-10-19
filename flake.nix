@@ -9,7 +9,7 @@
   outputs = { self, nixpkgs, ... }@inputs: {
 	nixosConfigurations.legion = nixpkgs.lib.nixosSystem {
 		specialArgs = { inherit inputs; };
-		modules = [ ./configuration.nix ];
+		modules = [ ./hosts/legion ];
 	};
   };
 }
