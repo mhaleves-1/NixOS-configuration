@@ -1,5 +1,6 @@
 {
   imports = [
+    ./firefox.nix
     ./git.nix
     ./kitty.nix
     ./shell.nix
