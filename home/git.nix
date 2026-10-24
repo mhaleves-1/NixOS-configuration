@@ -5,7 +5,7 @@
 
     settings = {
       user = {
-        name = "Darkmatter";
+        name = "DarkMatter";
         email = "materiaoscura.edu@gmail.com";
       };
       init.defaultBranch = "main";
