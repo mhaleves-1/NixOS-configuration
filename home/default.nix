@@ -4,6 +4,7 @@
     ./kitty.nix
     ./shell.nix
     ./ssh.nix
+    ./vscode.nix
   ];
 
   home.username = "mathias";
