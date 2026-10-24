@@ -3,14 +3,14 @@
     enable = true;
     enableDefaultConfig = false;
 
-    matchBlocks = {
+    settings = {
       "*" = {
         addKeysToAgent = "yes";
       };
       "github.com" = {
-        user = "git";
-        identityFile = "~/.ssh/id_ed25519";
-        identitiesOnly = true; 
+        User = "git";
+        IdentityFile = "~/.ssh/id_ed25519";
+        IdentitiesOnly = "yes"; 
       };
     };
   };
