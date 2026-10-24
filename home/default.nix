@@ -1,6 +1,8 @@
 {
   imports = [
     ./git.nix
+    ./kitty.nix
+    ./shell.nix
     ./ssh.nix
   ];
 

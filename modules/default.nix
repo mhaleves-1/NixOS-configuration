@@ -3,6 +3,7 @@
     ./audio.nix
     ./boot.nix
     ./desktop.nix
+    ./fonts.nix
     ./gaming.nix
     ./home-manager.nix
     ./locale.nix

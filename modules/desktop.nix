@@ -14,7 +14,6 @@
   # --------- Programs ---------
 
   environment.systemPackages = with pkgs; [
-	  kitty
 	  vscode
   ];
 
