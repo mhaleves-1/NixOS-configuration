@@ -1,5 +1,6 @@
 {
   imports = [
+    ./hyprland
     ./firefox.nix
     ./git.nix
     ./kitty.nix
