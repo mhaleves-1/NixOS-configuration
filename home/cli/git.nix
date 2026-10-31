@@ -6,7 +6,7 @@
     settings = {
       user = {
         name = "DarkMatter";
-        email = "materiaoscura.edu@gmail.com";
+        email = "330206685+mhaleves-1@users.noreply.github.com";
       };
       init.defaultBranch = "main";
     };

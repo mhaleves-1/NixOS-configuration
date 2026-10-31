@@ -1,16 +1,8 @@
 {
   imports = [
-    ./audio.nix
-    ./boot.nix
-    ./desktop.nix
-    ./fonts.nix
+    ./core
+    ./desktop
     ./gaming.nix
     ./home-manager.nix
-    ./locale.nix
-    ./memory.nix
-    ./networking.nix
-    ./nix.nix
-    ./packages.nix
-    ./users.nix
   ];
 }

@@ -1,12 +1,8 @@
 {
   imports = [
+    ./apps
+    ./cli
     ./hyprland
-    ./firefox.nix
-    ./git.nix
-    ./kitty.nix
-    ./shell.nix
-    ./ssh.nix
-    ./vscode.nix
   ];
 
   home.username = "mathias";
