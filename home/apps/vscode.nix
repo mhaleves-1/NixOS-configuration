@@ -1,8 +1,9 @@
-{ pkgs, ...}:
-let 
-  flake = ''(builltins.getFlake "/home/mathias/nixos")'';
-in 
+{ pkgs, ... }:
+let
+  flake = ''(builtins.getFlake "/home/mathias/nixos")'';
+in
 {
+  nix.serverPath = "nixd";
   home.packages = with pkgs; [
     nixd
     nixfmt
