@@ -5,7 +5,7 @@
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
-      DontChechDefaultBrowser = true;
+      DontCheckDefaultBrowser = true;
 
       ExtensionSettings = {
         "uBlock@raymondhill.net" = {

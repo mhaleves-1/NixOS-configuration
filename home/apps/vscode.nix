@@ -3,7 +3,6 @@ let
   flake = ''(builtins.getFlake "/home/mathias/nixos")'';
 in
 {
-  nix.serverPath = "nixd";
   home.packages = with pkgs; [
     nixd
     nixfmt
@@ -16,8 +15,13 @@ in
         jnoortheen.nix-ide
       ];
       userSettings = {
-        "editor.formatOnSave" = true;
+        "[nix]" = {
+          "editor.formatOnSave" = true;
+          "editor.defaultFormatter" = "jnoortheen.nix-ide";
+        };
+
         "nix.enableLanguageServer" = true;
+        "nix.serverPath" = "nixd";
         "nix.serverSettings".nixd = {
           formatting.command = [ "nixfmt" ];
           nixpkgs.expr = "import ${flake}.inputs.nixpkgs { }";
