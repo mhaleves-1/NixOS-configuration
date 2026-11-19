@@ -219,6 +219,10 @@ hl.config({
         touchpad = {
             natural_scroll = true,
         },
+
+        tablet = {
+            output = "HDMI-A-2",
+        },
     },
 })
 
